@@ -1,0 +1,19 @@
+@import url("./profile.css");
+@import url("./variables.css");
+@import url(./nav.css);
+@import url(./fonts.css);
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: "sf_pro_displayregular", sans-serif;
+    color: var(--font-color-primary);
+}
+
+body{
+    background-color: var(--bg-primary);
+    padding: 0 50px;
+}
+
+

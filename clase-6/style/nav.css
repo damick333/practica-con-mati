@@ -1,0 +1,36 @@
+
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    flex: 1;
+    display: flex;    
+    gap: 30px;
+    padding: 25px 0;
+}
+
+.menu .form input{
+    border-radius: 10px;
+    background-color: var(--bg-cards);
+    padding: 5px 0;
+    padding-left: 8px;
+    border: none;
+}
+
+
+.menu .form ::placeholder{
+    font-weight: bold;
+}
+
+input:focus{
+    color: var(--font-color-primary);
+}
+
+.rigth-menu{
+    flex: 3;
+    display: flex;
+    justify-content: end;
+}
