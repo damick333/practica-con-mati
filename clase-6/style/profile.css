@@ -134,8 +134,14 @@ aside{
 /*FIN PRIMERA CARD*/
 /*COMIENZO SEGUNDA CARD*/
 
+.people-know-container{
+    display: flex;
+    flex-direction: column;
+}
+
 .people-know-container .t-card{
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: start;
     color: #DDDDDD;
@@ -143,23 +149,75 @@ aside{
     line-height: 26.25px;
     font-weight: bold;
     width: 430px;
+    padding: 0 24px;
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 
-.people-know{
+.people-know-container .people-know{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 430px;
+    row-gap: 29px;
+    padding-top: 14px;
 }
 
 .people-know .people{
     display: flex;
-    flex-direction: column;
-    align-items: start;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
     width: 430px;
+    padding: 0 24px;
 }
 
-.people img{
-    width: 62px;
+.people .image{
+    width: 100%;
+    max-width: 106px;
+}
+
+.people .datos{
+    width: 100%;
+    max-width: 165px;
+}
+
+.people .datos p{
+    font-size: 15px;
+    line-height: 17.9px;
+    color: #888888;
+}
+
+.people .datos p:first-child{
+    font-size: 20px;
+    line-height: 23.87px;
+    color: #ffffff;
+}
+
+.people button{
+    width: 102px;
+    height: 42px;
+    border-radius: 51px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.people-know-container .show-more{
+    width: 430px;
+    padding: 0 24px;
+    padding-top: 17px;
+    padding-bottom: 20px;
+}
+
+.people-know-container .show-more a{
+    color: #1090F2;
+    font-size: 17px;
+    line-height: 20.29px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.people-know-container .show-more a:hover{
+    text-decoration: underline;
 }
