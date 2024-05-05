@@ -36,7 +36,8 @@ aside{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 430px; /*no funciona rem*/
+    width: 100%;
+    max-width: 430px; /*no funciona rem*/
     border-radius: 21px;
     background-color: var(--bg-cards);
 }
@@ -85,19 +86,19 @@ aside{
     flex-direction: row;
     align-items: center; 
     flex-wrap: wrap;
-    justify-content:space-around;
+    justify-content:space-between;
     color:#ffffff;
     text-align: center;
     width: 100%;
-    max-width: 430px;
     border-bottom: 1px solid #29364d;
+    padding: 12px 59px;
 }
 
 .seguidores .follow{
-    height: 93px; /*no funciona rem*/
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 9px 0;
     gap:3px;
 }
 
@@ -114,8 +115,9 @@ aside{
     font-family: var(--ff-secundary);
 }
 
-.seguidores .follow .ing{
-    border-top: 4px solid #29364d;
+.seguidores .separador{
+    width: 1px;
+    background-color: #29364d;
 }
 
 .show-profile{
@@ -137,21 +139,23 @@ aside{
 .people-know-container{
     display: flex;
     flex-direction: column;
+    width: 100%;
+    max-width: 430px;
 }
 
 .people-know-container .t-card{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: start;
+    justify-content: space-between;
     color: #DDDDDD;
     font-size: 22px;
     line-height: 26.25px;
     font-weight: bold;
-    width: 430px;
     padding: 0 24px;
     padding-top: 25px;
     padding-bottom: 15px;
+    width: 100%;
 }
 
 .people-know-container .people-know{
@@ -161,6 +165,7 @@ aside{
     justify-content: space-around;
     row-gap: 29px;
     padding-top: 14px;
+    width: 100%;
 }
 
 .people-know .people{
@@ -168,8 +173,8 @@ aside{
     flex-direction: row;
     align-items: center;
     justify-content: start;
-    width: 430px;
     padding: 0 24px;
+    width: 100%;
 }
 
 .people .image{
@@ -204,10 +209,10 @@ aside{
 }
 
 .people-know-container .show-more{
-    width: 430px;
     padding: 0 24px;
     padding-top: 17px;
     padding-bottom: 20px;
+    width: 100%;
 }
 
 .people-know-container .show-more a{
